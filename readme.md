@@ -225,13 +225,16 @@ The test is also an algorithm. As it is written in Java, it is easily readable. 
 Is this unique test enough to guarantee that your code is fully tested?
 It can be checked by observing the code coverage. The idea is to "monitor" the code during the execution of the Unit Test (s), to see which lines of code are covered.
 It is possible to launch Coverage via a right click -> Coverage as -> Junit Test.
-The Coverage view is displayed (by default in the ViewList below). The objective of this view is to indicate the coverage rate of the code, by making it possible to see at the project level, a (sub) package, a class and even a method.
-We can see here that your unique Unit Test allows you to achieve 18.2% code coverage on your (small) project. If we observe the toTable method of the StringUtils class, we see that this method is 60.2% covered. In fact, the TU only covers 41 of the 103 instructions included in this method.
+The Coverage view is displayed (by default in the ViewList below). 
+The objective of this view is to indicate the coverage rate of the code, by making it possible to see at the project level, a (sub) package, a class and even a method.
+We can see here that your unique Unit Test allows you to achieve 18.2% code coverage on your (small) project.
+If we observe the toTable method of the StringUtils class, we see that this method is 60.2% covered.
+In fact, the TU only covers 41 of the 103 instructions included in this method.
 If you open the StringUtils file, you will be able to see the coverage line by line.
 - In Green: a fully covered line
 - In Yellow: a partially covered line
 - In Red: an uncovered line
-Coverage works by "session". A session keeps the lines of code which have been executed or not. It is possible to record several sessions, and then compare. 
+Coverage works by "session".
+A session keeps the lines of code which have been executed or not. It is possible to record several sessions, and then compare. 
 It is also possible to "delete" the session data, in particular to remove all the colors in the files!
-
 
