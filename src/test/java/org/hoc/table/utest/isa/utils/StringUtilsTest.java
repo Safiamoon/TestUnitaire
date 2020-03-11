@@ -15,18 +15,18 @@ import org.junit.Test;
  */
 public class StringUtilsTest {
 	@Test
-    public void testToTable_oneCol() {
+    public void testToTable_oneRow() {
         List<String> datas = new ArrayList<String>();
         datas.add("le petit chas");
         datas.add("se tient");
         datas.add("sur sa tige");
 
-        Integer numberOfCol = 3;
+        Integer numberOfCol = 2;
       
 
         String table = StringUtils.toTable(numberOfCol, datas);
        
-        Integer expectedNbRows = 1;
+        Integer expectedNbRows = 2;
 
         Assert.assertNotNull("Table should contains datas", table);
         Integer expectedPipe = expectedNbRows * (1 + numberOfCol);
